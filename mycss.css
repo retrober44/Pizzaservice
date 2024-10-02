@@ -1,0 +1,311 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(255, 243, 243);
+    width: 100%;
+    background-image: url("img/bggrey.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.nav{
+    margin: 0 auto;
+    width: 50.938em;
+}
+
+.nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav ul li{
+    background-color: rgba(100, 100, 100, 0.281);
+    border-right: 1px solid black;
+    display: inline-block;
+    width: 12.500em;
+    height: 3.125em;
+    margin-left: -0.250em;
+    text-align: center;
+
+}
+
+.nav ul li a{
+    display: inline-block;
+    font-size: 1.250em;
+    color: rgb(0, 0, 0);
+    padding-top: 0.738em;
+    text-decoration: none;
+    height: 1.7em;
+    width: 100%;
+
+}
+
+.nav ul li:hover{
+    background-color: rgba(255, 255, 255, 0.253);
+    transform: translateY(2px);
+}
+
+
+.nav ul li:last-child{
+   border-right: none;
+}
+
+.current{
+    background-color: rgba(255, 255, 255, 0.253);
+    transform: translateY(1px);
+}
+h1{
+    color: black;
+    text-align: center;
+}
+
+h2{
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+.bestellungWrapper{
+    width: 79.250em;
+    margin: 0px auto;
+    background-color: rgba(117, 117, 117, 0.205);
+}
+
+.speisekarte{
+    margin: 0px auto;
+    width: 56.250em;
+    height: 100%;
+    display: inline-block;
+}
+
+.pizza{
+    display: inline-block;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 18.625em;
+    text-align: center;
+    margin-top: 1.250em;
+}
+
+
+.warenkorb{
+    position: fixed;
+    border: 1px solid;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    padding-bottom: 0.625em;
+    display: inline-block;
+    margin-left: 5.125em;
+    vertical-align: top;
+    background-color: rgba(128, 128, 128, 0.226);
+}
+
+button{
+    border: 1px solid black;
+}
+
+button:hover{
+    background: white;
+}
+
+
+select{
+    background-color: rgba(255, 243, 243, 0);
+    height: 13.063em;
+}
+
+
+option{
+    font-size: 1.125em;
+    padding-bottom: 0.250em;
+    width: 16.250em;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+option:checked {
+    box-shadow: 0 0 0.625em 6.250em rgba(255, 255, 255, 0); 
+}
+
+.inputBestellung{
+    width: 100%;
+    height: 1.563em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1px;
+}
+
+#inputAdr{
+    width: 100%;
+}
+
+.meineBestellungen input[type="radio"]{
+    margin-right: 2em;
+}
+
+.meineBestellungen .table{
+    width: 38.250em;
+    margin: 0px auto;
+    margin-top: 1.250em;
+    text-align: center;
+}
+
+
+
+
+
+
+#bestellBereich{
+    text-align: center;
+    width: 30em;
+    margin: 0px auto;
+}
+
+#bestellBereich .table{
+    border: 1px solid rgb(128, 128, 128);
+    margin-bottom: 2em;
+    background-color: rgba(128, 128, 128, 0.123);
+}
+
+.thName{
+    margin-left: 0.8em;
+    margin-bottom: 2em;
+    margin-top: 0.5em;
+}
+
+#bestellBereich .table .tr .th{
+    display: inline-block;
+}
+
+.tr .th:first-child{
+    padding-right: 4em;
+}
+.tr .th:last-child{
+    padding-left: 4em;
+}
+
+#bestellBereich .table .td{
+    display: inline-block;
+    width: 7.5em;
+}
+
+#fahrerbereich{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#fahrerbereich form{
+    border: 1px solid rgb(128, 128, 128);
+    width: 20em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    background-color: rgba(128, 128, 128, 0.123);
+
+}
+
+#fahrerbereich form div input{
+    margin-right: 2.5em;
+}
+
+img{
+    transition: 0.1s;
+}
+
+img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+img:active {
+    transform: scale(1);
+  }
+
+.block {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+  }
+  
+.block select {
+    padding: 10px;
+    margin: -5px -20px -5px -5px;
+}
+
+#pPreis{
+    padding-left: 4px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1280px){
+
+    body{
+        width: auto;
+    }
+
+    .bestellungWrapper{
+        width: auto;
+    }
+
+    .warenkorb{
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        position: relative;
+    }
+
+   
+    
+   
+
+}
+
+@media screen and (max-width: 800px){
+
+    body{
+        width: auto;
+    }
+
+
+    .nav{
+        width: auto;
+    }
+
+    .nav ul li{
+        display: block;
+        width: auto;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+
+    .bestellungWrapper{
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+
+    .speisekarte{
+        width: auto;
+        text-align: center;
+        
+    }
+
+    .pizza{
+        display: inline-block;
+      
+    }
+
+
+    .warenkorb{
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        border: none;
+    }
+
+   
+   
+   
+
+}

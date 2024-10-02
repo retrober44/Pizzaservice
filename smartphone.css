@@ -1,0 +1,27 @@
+@media screen and (max-width: 630px){
+    body{
+        width: auto;
+
+    }
+
+    .bestellungWrapper{
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+
+    .speisekarte{
+        width: auto;
+        text-align: center;
+        
+    }
+
+    .pizza{
+        display: inline-block;
+        width: 50%;
+
+    }
+
+    
+}
+
